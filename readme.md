@@ -1,0 +1,1 @@
+# LinkList.js implements a linklist, which is a data structure that support sequential access through a chained list of links.

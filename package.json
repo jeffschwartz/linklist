@@ -1,0 +1,11 @@
+{
+  "name": "linkedlists",
+  "version": "0.0.1",
+  "description": "Link List Library",
+  "author": "Jeffrey Schwartz",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}
