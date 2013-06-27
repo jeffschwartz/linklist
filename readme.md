@@ -1,8 +1,8 @@
 # LinkList.js
 
-Implements a linklist, which is a simple data structure that supports sequential access (traversing) through a chained list of links.
+## A JavaScript library for implementing linklists, which are simple data structures that supports sequential access (traversal) through a chained list of links.
 
-LinkList is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
+## LinkList is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
 
 Here's the result of creating a link list of 1,000,000 links when running on the latest release Chrome:
 
