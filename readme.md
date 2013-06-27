@@ -73,3 +73,5 @@ Creates a new Link. Don't forget to include the new operator or bad things will 
 ## Please see javascripts/examples.js for examples using the api.
 
 ## Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
+
+## LinkList is available for use under the MIT software license.
