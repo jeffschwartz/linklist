@@ -17,7 +17,6 @@ module.exports = function ( grunt ) {
     } );
 
     // Load the plugins
-    grunt.loadNpmTasks( 'grunt-contrib-watch' );
     grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 
     // Alias Tasks
