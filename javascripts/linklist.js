@@ -1,3 +1,8 @@
+//     LinkList.js 0.0.1
+
+//     (c) 2013 Jeffrey Schwartz
+//     LinkList may be freely distributed under the MIT license.
+
 (function(){
 
     "use strict";
