@@ -127,11 +127,17 @@
      }
      console.timeEnd(timerName);
      timerName = "Iterate 1,000,000 links using Array";
-     console.time(timerName);
-     for(i = 0; i < 1000000; i++){
-        el = a[i];
+     function simulateTraverse(callback){
+        for(i = 0; i < 1000000; i++){
+            callback(a[i]);
+        }
      }
+     console.time(timerName);
+     simulateTraverse(function(link){
+        el = link;
+     });
      console.timeEnd(timerName);
+     a.length = 0;
 
      showTest("T i m e  1 , 0 0 0 , 0 0 0  W i t h  L i n k e d  L i s t ");
      timerName = "Create 1,000,000 Links using LinkedList";
@@ -147,5 +153,6 @@
         el = link;
      });
      console.timeEnd(timerName);
+     ll.reset();
 
 }(window.LinkListModule));
