@@ -4,7 +4,7 @@
 
 ## LinkList is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
 
-### Here's the result of creating a link list of 1,000,000 links when running on the latest release Chrome:
+### Here's the result of creating a link list of 1,000,000 links when running on the latest release of Chrome:
 
 > Create 1,000,000 Links using LinkedList: 270.543ms
 
@@ -18,7 +18,7 @@
 
 The above includes calling a callback function for each traversed link.
 
-### And here's the result of traversing an array of 1,000,000 elements:
+### And here's the result of traversing an array of 1,000,000 elements on the latest release of Chrome:
 
 > Iterate 1,000,000 links using Array: 12.492ms
 
