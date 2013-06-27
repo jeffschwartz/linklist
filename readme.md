@@ -2,7 +2,7 @@
 
 Implements a linklist, which is a simple data structure that supports sequential access (traversing) through a chained list of links.
 
-LinkList is fast. How fast? Faster than using JavaScript's built in Array!
+LinkList is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
 
 Here's the result of creating a link list of 1,000,000 links when running on the latest release Chrome:
 
@@ -22,11 +22,10 @@ And here's the result of traversing an array of 1,000,000 elements:
 
 > Iterate 1,000,000 links using Array: 12.492ms
 
-## LinkList adds the following methods to its prototype:
+## LinkList API
 
 ### Constructor
-Creates a new link list
-Don't forget to include the new operator or bad things will happen.
+Creates a new link list. Don't forget to include the new operator or bad things will happen.
 
     var ll = new LinkList();
 
@@ -64,14 +63,13 @@ Removes all the links from the link list.
 
     ll.reset();
 
-## Link, a constructor function for creating Links.
+## Link API
 
 ### Constructor
-Creates a new Link
-Don't forget to include the new operator or bad things will happen.
+Creates a new Link. Don't forget to include the new operator or bad things will happen.
 
     var l = new Link('Some data you want to store in the link. All JavaScript types are supported.');
 
 ## Please see javascripts/examples.js for examples using the api.
 
-## Please see javascripts/test.js for testing the api.
+## Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
