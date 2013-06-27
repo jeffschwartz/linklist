@@ -2,25 +2,25 @@
 
 Implements a linklist, which is a simple data structure that supports sequential access (traversing) through a chained list of links.
 
-LinkList is fast. How fast? Faster than using JavaScripts built in Array.
+LinkList is fast. How fast? Faster than using JavaScript's built in Array!
 
 Here's the result of creating a link list of 1,000,000 links when running on the latest release Chrome:
 
-1 Create 1,000,000 Links using LinkedList: 270.543ms
+> Create 1,000,000 Links using LinkedList: 270.543ms
 
 And here's the result of creating an array of 1,000,000 elements when running on the latest release of Chrome:
 
-1 Create 1,000,000 links using Array: 253.301ms
+> Create 1,000,000 links using Array: 253.301ms
 
 Here's the result of traversing 1,000,000 links in a link list when running on the latest release of Chrome:
 
-1 Iterate 1,000,000 Links using LinkedList: 7.215ms
+> Iterate 1,000,000 Links using LinkedList: 7.215ms
 
 The above includes calling a callback function for each traversed link.
 
 And here's the result of traversing an array of 1,000,000 elements:
 
-1 Iterate 1,000,000 links using Array: 12.492ms
+> Iterate 1,000,000 links using Array: 12.492ms
 
 ## LinkList adds the following methods to its prototype:
 
