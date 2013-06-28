@@ -1,5 +1,5 @@
 # LinkList.js
-A JavaScript library for implementing linklists, which are simple data structures that support sequential access (traversal) through a chained list of links.
+A small JavaScript library for implementing link lists, which are simple data structures that support sequential access (traversal) through a chained list of links.
 
 So why use link lists at all? I mean, JavaScript already has arrays, right? Well, because sometimes working with link lists are easier and more expressive than when working with arrays. Take iteration, for example. That's something we do a lot, right? Well, here's how it's done using LinkList.js:
 
@@ -98,4 +98,4 @@ v0.0.2, released on 2012/06/28 - Added instance methods appendFrom and arrayFrom
 ## Copyright And License
 Copyright 2013 Jeffrey Schwartz
 
-LinkList is available for use under the [MIT software license.](https://github.com/jeffschwartz/linklist/blob/master/LICENSE)
+LinkList.js is available for use under the [MIT software license.](https://github.com/jeffschwartz/linklist/blob/master/LICENSE)
