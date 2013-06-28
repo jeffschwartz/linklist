@@ -1,7 +1,13 @@
 # LinkList.js
 A JavaScript library for implementing linklists, which are simple data structures that support sequential access (traversal) through a chained list of links.
 
-LinkList is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
+So why use link lists at all? I mean, JavaScript already has arrays, right? Well, because sometimes working with link lists are easier and more expressive than when working with arrays. Take iteration, for example. That's something we do a lot, right? Well, here's how it's done using LinkList.js:
+
+    linklist.traverse(function(link){ do something with link.data });
+
+Simple and expressive, yes? Well, I think so, and that's why I wrote this small but very useful library. I was working on some code, lots of code, actually, and I was using lots of arrays, which, when I realized it, weren't semantically expressing what my intention was. So, I set about correcting that by writing LinkList.js. And that's the story, the whole kit, kat and kaboodle, as they say.
+
+If you think you will have to sacrifice speed to gain better semantics using LinkList.js, you won't. In fact, LinkList.js is fast. How fast? Faster than using JavaScript's built in Array for sequential access!
 
 Here's the result of creating a link list of 1,000,000 links when running on the latest release of Chrome:
 
@@ -84,7 +90,7 @@ Creates a new Link. Don't forget to include the new operator or bad things will 
 ## Examples And Tests
 Please see javascripts/examples.js for examples using the api.
 
-Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array
+Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
 
 ## What's New
 v0.0.2, released on 2012/06/28 - Added instance methods appendFrom and arrayFrom to LinkList. See above for details.
