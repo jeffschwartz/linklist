@@ -41,6 +41,18 @@ Pops a link off of the tail of the link list and calls a callback function if on
         // do something here with the link.
     });
 
+### appendFrom
+Creates links from array elements or hash properties and appends them to the link list.
+
+    ll.appendFrom([1,2,3,4,5]);
+
+    ll.appendFrom({prop1: 1, prop2: 2, prop3: 3, prop4: 4, prop5: 5})
+
+### arrayFrom
+Creates an array from the link list, pushing the data from each link onto the array.
+
+    var a = ll.arrayFrom();
+
 ### insert
 Inserts a link immediately after another link.
 
@@ -52,7 +64,7 @@ Removes a link from the link list.
     ll.del(link);
 
 ### traverse
-Sequentially visits each link in the link list, starting from the head, and calls a callback function for each visited link if one is provided.
+Sequentially visits each link in the link list, starting from the head, and calls a callback function for each visited link.
 
     ll.traverse(function(link){
         // do something here with the link.
@@ -73,5 +85,10 @@ Creates a new Link. Don't forget to include the new operator or bad things will 
 ## Please see javascripts/examples.js for examples using the api.
 
 ## Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
+
+## What's New
+
+### v0.0.2, released on 2012/06/28
+Added instance methods appendFrom and arrayFrom to LinkList. See above for details.
 
 ## LinkList is available for use under the [MIT software license.](https://github.com/jeffschwartz/linklist/blob/master/LICENSE)
