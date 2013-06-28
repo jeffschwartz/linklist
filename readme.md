@@ -82,13 +82,13 @@ Creates a new Link. Don't forget to include the new operator or bad things will 
 
     var l = new Link('Some data you want to store in the link. All JavaScript types are supported.');
 
-## Please see javascripts/examples.js for examples using the api.
+### Please see javascripts/examples.js for examples using the api.
 
-## Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
+### Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
 
-## What's New
+### What's New
 
-### v0.0.2, released on 2012/06/28
+#### v0.0.2, released on 2012/06/28
 Added instance methods appendFrom and arrayFrom to LinkList. See above for details.
 
-## LinkList is available for use under the [MIT software license.](https://github.com/jeffschwartz/linklist/blob/master/LICENSE)
+### LinkList is available for use under the [MIT software license.](https://github.com/jeffschwartz/linklist/blob/master/LICENSE)
