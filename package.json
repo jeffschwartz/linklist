@@ -1,6 +1,6 @@
 {
-  "name": "linkedlists",
-  "version": "0.0.1",
+  "name": "LinkList.js",
+  "version": "0.0.2",
   "description": "Link List Library",
   "author": "Jeffrey Schwartz",
   "license": "MIT",
