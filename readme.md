@@ -82,9 +82,9 @@ Creates a new Link. Don't forget to include the new operator or bad things will 
 
     var l = new Link('Some data you want to store in the link. All JavaScript types are supported.');
 
-### Please see javascripts/examples.js for examples using the api.
+__Please see javascripts/examples.js for examples using the api.__
 
-### Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.
+__Please see javascripts/test.js for testing the api as well as for benchmarking the api against JavaScript's built in Array.__
 
 ### What's New
 
