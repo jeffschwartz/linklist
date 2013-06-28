@@ -1,4 +1,4 @@
-//     LinkList.js 0.0.1
+//     LinkList.js 0.0.2
 
 //     (c) 2013 Jeffrey Schwartz
 //     LinkList may be freely distributed under the MIT license.
@@ -7,19 +7,26 @@
 
     "use strict";
 
+    // Create our module namespace.
     var LinkListModule = window.LinkListModule = {};
 
     /**
      * LinkList Implementation
      */
 
-    // A Link constructor function.
-    var Link = LinkListModule.Link = function Link(){
+    /**
+     * Constructor - creates a new Link. Don't forget to call with 'new' or bad things will happen.
+     * @param data - data to store in the link. All JavaScript types are supported.
+     */
+    var Link = LinkListModule.Link = function Link(data){
         this.next = this.previous = null;
-        if(arguments.length) this.data = arguments[0];
+        this.data = data;
     };
 
     // A LinkList constructor function.
+    /**
+     * Constructor - creates a new link list. Don't forget to call with 'new' or bad things will happen.
+     */
     var LinkList = LinkListModule.LinkList = function LinkList(){
         this.head = this.tail = null;
         this.count = 0;
@@ -124,13 +131,13 @@
 
     /**
      * traverse - traverses a list.
-     * @param callback - optional. If supplied called with link as a parameter.
+     * @param callback - called with link as a parameter.
      */
     LinkList.prototype.traverse = function traverse(callback){
         var nextLink = this.head;
         while(nextLink){
             // Breakout of the loop if the callback returns true.
-            if(callback && callback(nextLink)) break;
+            if(callback(nextLink)) break;
             nextLink = nextLink.next;
         }
     };
