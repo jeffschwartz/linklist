@@ -1,4 +1,4 @@
-(function(LinkListModule){
+ (function(LinkListModule){
 
     "use strict";
 
@@ -8,17 +8,16 @@
      * Unit Tests
      */
 
-
     // helper
     function showTest(description){
-    var bLine = "***************************************************************************";
-    var len = bLine.length - 2; // doesn't include leading and trailing '*' characters.
-    var str1 = Array(Math.floor((len - description.length) / 2)).join(" ") + description;
-    var str2 = Array(len - str1.length + 1).join(" ");
-    console.log("");
-    console.log(bLine);
-    console.log("*"+str1+str2+"*");
-    console.log(bLine);
+        var bLine = "***************************************************************************";
+        var len = bLine.length - 2; // doesn't include leading and trailing '*' characters.
+        var str1 = Array(Math.floor((len - description.length) / 2)).join(" ") + description;
+        var str2 = Array(len - str1.length + 1).join(" ");
+        console.log("");
+        console.log(bLine);
+        console.log("*"+str1+str2+"*");
+        console.log(bLine);
     }
 
     // some vars
